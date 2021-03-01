@@ -267,17 +267,17 @@ header {
   content: "";
   display: block;
   height: 0.09em;
-  min-width: 30vw;
+  min-width: 25vw;
 }
 
 .aboutTitle::before {
   background: linear-gradient(to right, rgba(240, 240, 240, 0), #f05454);
-  margin-right: 4vh;
+  margin-right: 1vh;
 }
 
 .aboutTitle::after {
   background: linear-gradient(to left, rgba(240, 240, 240, 0), #f05454);
-  margin-left: 4vh;
+  margin-left: 1vh;
 }
 
 /* About title ends here */
