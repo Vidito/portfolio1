@@ -73,8 +73,8 @@ header {
   margin-top: 15px;
 }
 .navbar li {
-  background-color:#222831;
-  height:125px;  
+  background-color: #222831;
+  height: 125px;
 }
 /* The underline effect */
 
@@ -89,7 +89,7 @@ li a.menuLink::before {
   height: 2px;
   bottom: 0;
   left: 10;
-  background-color: #D1CFD2;
+  background-color: #d1cfd2;
   transition: all 0.3s ease-in-out;
 }
 a.menuLink:hover::before {
@@ -103,10 +103,9 @@ a.menuLink:hover::before {
   height: 2px;
   bottom: 0;
   left: 10;
-  background-color: #F05454;
+  background-color: #f05454;
   transition: all 0.3s ease-in-out;
 }
-
 
 /* Underline eefect for menu */
 .logo {
@@ -185,7 +184,6 @@ a.menuLink:hover::before {
 
   .ham {
     visibility: visible;
-
     position: fixed;
     /* keep the hamburger button above everything */
     z-index: 100;
@@ -233,6 +231,10 @@ a.menuLink:hover::before {
     text-align: center;
     padding: 1rem 0;
     display: block;
+  }
+  .navbar li {
+    margin: 0;
+    background-color: transparent;
   }
 
   .menuLink {
@@ -361,7 +363,10 @@ a.menuLink:hover::before {
     display: grid;
     grid-template-columns: 1fr;
   }
-
+  a.menuLink:hover::before,
+  a.menuLink::before {
+    display: none;
+  }
   .aboutImage {
     display: none;
   }
