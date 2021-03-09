@@ -4,103 +4,202 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" 
-    type="image/png" 
-    href="https://i.postimg.cc/Njk7jHJK/fav.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Vahid Web Developer Portfolio</title>
+    <title>Portfolio</title>
 </head>
 <body>
-   
-    <header>
-        <div class="navbar">
-                <div class="logo">
-                    <span>V</span>
+        <!--First a navbar  -->
+        <nav>
+            <h1 class="v">V.</h1>
+            <ul class="nav">
+                <li class="navItem activeMenu"><a href="#">Home</a></li>
+                <li class="navItem"><a href="#">About</a></li>
+                <li class="navItem"><a href="#">Projects</a></li>
+                <li class="navItem"><a href="#">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+        <header>
+            <div class="hero">
+                <div class="herocontent" data-aos="fade-right"
+                data-aos-duration="3000">
+                    <h1 class="name">I'm <span class="v"> V</span>ahid</h1>
+                    <h4 class="position">Javascript / React <br> Developer</h4>
+                    <button class="herobutton">Hire me</button>
                 </div>
-                <!--  -->
-                <button class="ham">
-                    <span class="menuIcon">Menu</span>
-                    <span class="xIcon ">
-                      close
-                    </span>
-                  </button>
-                <!--  -->
-                <ul class="menu">
-                    <li><a href="#" class="menuLink active"> Home</a></li>
-                    <li><a href="#about" class="menuLink"> About</a></li>
-                    <li><a href="projects.html" class="menuLink"> Projects</a></li>
-                    <li><a href="#contact" class="menuLink"> Contact</a></li>
-                </ul>
+                <div class="heroimg" data-aos="fade-left" data-aos-duration="3000">
+                    <img src="https://i.postimg.cc/pLW1CDJV/IMG-20191027-093159-721.jpg" alt="me" >
+                </div>  
+            </div>
+        </header>
+        <!-- About section -->
+        <div class="about-page" id="aboutUs">
+            <div class="herocontent aboutimage">
+                <h1 class="aboutme"><span class="line">About me</span></h1>
+            </div>
+            <div class="aboutcontent">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.
+                    <br> <br>
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nu pariatur
+                    excepteur sint occaecat.
+                </p>
+                <button class="btn  aboutbutton1">View Works</button>
+                <button class="btn aboutbutton2">Download CV </button>
+            </div>
         </div>
-        <div class="hero">
-            <div class="heroContent">
-                <div class="heroTitle">
-                    <h1>I'm Vahid</h1>
+        <!-- Services section -->
+        <div class="servicesContainer" id="services">
+        <section class="services" data-aos="fade-up" data-aos-duration="2000">
+            <div class="servicesText"> 
+                <h1 class="line">Services</h1>
+                <br>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natur</p>
+            </div>
+            <div class="cards">
+                <div class="card card1" data-aos="fade-up" data-aos-duration="3000" >
+                    <!-- <i class="fas fa-mobile-alt fa-3x"></i> -->
+                    <img src="https://img.icons8.com/dusk/64/000000/google-mobile.png" />
+                    <h2 class="cardtitle">UX Research</h2>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</p>
                 </div>
-                <div class="heroText">
-                    <h3>A Javascript Developer</h3>
+                <div class="card card2" data-aos="fade-up" data-aos-duration="3000">
+                    <img src="https://img.icons8.com/cotton/64/000000/favourite-website.png" />
+                    <h2 class="cardtitle">Web Development</h2>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</p>
                 </div>
-                <div class="heroButton">
-                    <a href="#contact"><button>Contact Me</button></a>
+                <div class="card card3" data-aos="fade-up" data-aos-duration="3000">
+                    <img src="https://img.icons8.com/dusk/64/000000/google-mobile.png" />
+                    <h4 class="cardtitle">App Design</h4>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</p>
+                </div>
+                <div class="card card4" data-aos="fade-up" data-aos-duration="3000">
+                    <img src="https://img.icons8.com/nolan/64/template.png" />
+                    <h2 class="cardtitle">UX Research</h2>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</p>
                 </div>
             </div>
-            <div class="heroImage">
-                <img src="https://i.postimg.cc/pLW1CDJV/IMG-20191027-093159-721.jpg" alt="">
-            </div>
-        </div>
-            <div class="arrow">
-                <img src="https://i.postimg.cc/wjTLXNBp/arrow.png"/>
-            </div>
-    </header>
-    <div class="aboutTitle" id="about">
-        <h1>About Me</h1>
+        </section>
     </div>
-    <section class="about">
-        <div class="aboutImage">
-            <h2>About me</h2>
+    <!-- Works Section  -->
+    <div class="worksContainer" id="portfolio">
+        <div class="servicesText">
+        <h1 class="line">Latest Works</h1>
+        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id <br> est laborum. Sed ut perspiciatis unde omnis iste natus</p>
         </div>
-        <div class="aboutText">
-            <h2>Junior Web Developer</h2> <br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet provident saepe nesciunt modi. Tempora aspernatur reiciendis culpa, optio ullam id?</p> <br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet provident saepe nesciunt modi. Tempora aspernatur reiciendis culpa, optio ullam id?</p> <br>
-            <div class="hireMe">
-                <a href="#contact"><button>Hire me</button></a> 
+        <div class="category">
+            <ul class="categoryList">
+                <li class="active">All</li>
+                <li>Branding Goals</li>
+                <li>Photography</li>
+                <li>True Perfection</li>
+                <li>Web design</li>
+            </ul>
+        </div>
+    <div class="griddy">
+    <div class="grid-container">
+        <div class="one cardhover"><img src="https://droitthemes.com/wp/mak/wp-content/uploads/2018/10/02-1-767x780.jpg" alt=""> <div class="firstpopup"> <i class="fas fa-search"></i> <h2>Camping Enamel Mug</h2> <p>Art, Creative</p></div></div>
+        <div class="two cardhover"><img src="https://droitthemes.com/wp/mak/wp-content/uploads/2018/10/01.jpg" alt=""> <div class="popup"> <i class="fas fa-search"></i> <h2>Camping Enamel Mug</h2> <p>Art, Creative</p></div></div>
+        <div class="three cardhover"><img src="https://droitthemes.com/wp/mak/wp-content/uploads/2018/10/06-940x485.jpg" alt=""> <div class="popup"> <i class="fas fa-search"></i> <h2>Camping Enamel Mug</h2> <p>Art, Creative</p></div></div>
+        <div class="four cardhover"><img src="https://droitthemes.com/wp/mak/wp-content/uploads/2018/10/05.jpg" alt=""> <div class="popup"> <i class="fas fa-search"></i> <h2>Camping Enamel Mug</h2> <p>Art, Creative</p></div></div>
+        <div class="five cardhover"><img src="https://droitthemes.com/wp/mak/wp-content/uploads/2018/10/07-940x485.jpg" alt=""><div class="popup"> <i class="fas fa-search"></i> <h2>Camping Enamel Mug</h2> <p>Art, Creative</p></div> </div>
+        <div class="six cardhover"><img src="https://droitthemes.com/wp/mak/wp-content/uploads/2018/10/04-940x485.jpg" alt=""><div class="popup"> <i class="fas fa-search"></i> <h2>Camping Enamel Mug</h2> <p>Art, Creative</p></div> </div>
+        <div class="seven cardhover"><img src="https://droitthemes.com/wp/mak/wp-content/uploads/2018/10/08-570x580.jpg" alt=""> <div class="popup"> <i class="fas fa-search"></i> <h2>Camping Enamel Mug</h2> <p>Art, Creative</p></div></div>
+        <div class="eight cardhover"><img src="https://droitthemes.com/wp/mak/wp-content/uploads/2018/10/latest-work-img-8-1.jpg" alt=""><div class="popup"> <i class="fas fa-search"></i> <h2>Camping Enamel Mug</h2> <p>Art, Creative</p></div> </div>
+      </div>
+    </div>
+</div>
+<!-- Work Experience Section  -->
+
+    <section class="experience">
+        <div class="servicesText">
+            <h1 class="line">Work Experiences</h1>
+            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus</p>
+            </div>
+        <div class="workCards">
+            <div class="workCard workCard1">
+                <p>June 2012- 2016</p>
+                <h3>UI/UX Designer</h3>
+                <p>Adobe Inc.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas reprehenderit molestias modi illum provident. Unde.</p>
+            </div>
+            <div class="workCard workCard2">
+                <p>June 2012- 2016</p>
+                <h3>Product Designer</h3>
+                <p>Adobe Inc.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas reprehenderit molestias modi illum provident. Unde.</p>
+            </div>
+            <div class="workCard workCard3">
+                <p>June 2012- 2016</p>
+                <h3>Graphic Designer</h3>
+                <p>Adobe Inc.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas reprehenderit molestias modi illum provident. Unde.</p>
             </div>
         </div>
     </section>
-<!-- Contact formmmmmmmmmmmmmmmmmmmmmmmm -->
-
-
-    
-        <div class="aboutTitle" id="contact">
-            <h1>Contact Info</h1>
-        </div>   
-        <div class="contact">     
-        <div class="contactText">
-            <h1>Contact Me</h1>
-            <ul class="contactInfo">
-                <li><img src="https://img.icons8.com/bubbles/48/000000/phone.png"/> : 0-000000</li>
-                <li><img src="https://img.icons8.com/bubbles/48/000000/email.png"/>: vahid@example.com</li>
-                <li><img src="https://img.icons8.com/bubbles/48/000000/address.png"/>: Arnhem, the Netherlands</li>
-            </ul>
-            <h3>Social Media</h3>
-            <br>
-            <ul class="socialMedia">
-                <li><img src="https://img.icons8.com/bubbles/48/000000/facebook.png"/></li>
-                <li><img src="https://img.icons8.com/bubbles/48/000000/github.png"/></li>
-                <li><img src="https://img.icons8.com/bubbles/48/000000/instagram.png"/></li>
+    <section class="question">
+        <h1 class="line">Have Any Projects In Mind?</h1>
+        <button>Hire me</button>
+    </section>
+    <section class="contact" id="contact">
+        <h1 class="line">Contact Me</h1>
+        <div class="infoContact">
+        <div class="info">
+          
+            <h3>Contact Info</h3> <br>
+            <ul>
+                <li><i class="fas fa-map-marker-alt"></i> DroitThemes, Mirpur DOHS, Dhaka</li> <br>
+                <li><i class="fas fa-envelope"></i> inova.theme@gmail.com</li> <br>
+                <li> <i class="fas fa-phone"></i> +92548616475</li>
+                <li>&#8287; &#8287; &#8287;+92548616475</li> <br>                
+                <li><i class="fas fa-wifi"></i> www.droitthemes.com</li> <br>
+                <li>Follow Me</li>
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a> &#8287; &#8287;<a href="#"><i class="fab fa-twitter"></i></a> &#8287; &#8287;<a href="#"><i class="fab fa-linkedin-in"></i></a> &#8287; &#8287;<a href="#"><i class="fab fa-pinterest-p"></i></a>&#8287; &#8287; <a href="#"><i class="fab fa-vimeo-v"></i></a></li>
             </ul>
         </div>
-        <div class="input">
-            <form action="">
-                <input type="text" name="name" class="name" placeholder="From"> <br>
-                <input type="text" name="email" class="email" placeholder="Email"> <br>
-                <textarea cols="10" rows="5" class="message" placeholder="Message"></textarea> <br>
-                <button>Post it!</button>
-            </form>
-        </div>
+        <div class="contactForm">
+      
+                <form action="">
+                  <label for="name">NAME</label>
+                  <input type="text" id="name" name="name" placeholder="Type your name">
+                  <div class="phone-email">
+                  <div class="phone">
+                  <label for="phone">PHONE NUMBER</label>
+                  <input type="text" id="phone" name="phone" placeholder="Type your phone number">
+                </div>
+                <div class="email">
+                  <label for="email">EMAIL</label>
+                  <input type="text" id="email" name="email" placeholder="Type your email adress">
+                </div>
+            </div>
+                  <label for="message">YOUR MESSAGE</label>
+                  <textarea name="message" class="message" id="message" cols="40" rows="8"></textarea>
+                  <input type="submit" value="SEND MESSAGE">
+                </form>
+             
+        </div> 
     </div>
-    <script src="main.js"></script>
-
+    </section>
+    <section class="bottom">
+        <h1 class="bottomLogo">M.</h1>
+        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia <br>   deserunt mollit anim id est laborum.</p>
+        <div class="logos"><a href="#"><i class="fab fa-facebook-f"></i></a> &#8287; &#8287;<a href="#"><i class="fab fa-twitter"></i></a> &#8287; &#8287;<a href="#"><i class="fab fa-linkedin-in"></i></a> &#8287; &#8287;<a href="#"><i class="fab fa-pinterest-p"></i></a>&#8287; &#8287; <a href="#"><i class="fab fa-vimeo-v"></i></a> &#8287; &#8287;<a href="#"><i class="fab fa-google-plus-g"></i></a></div>
+    </section>
+    <footer>
+        <p>Copyright © 2021 <span> Vahid</span></p>
+    </footer>
+    <script src="script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
 </body>
 </html>
